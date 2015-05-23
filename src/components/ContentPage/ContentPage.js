@@ -3,7 +3,6 @@
 import React, { PropTypes } from 'react'; // eslint-disable-line no-unused-vars
 import styles from './ContentPage.less'; // eslint-disable-line no-unused-vars
 import withStyles from '../../decorators/withStyles'; // eslint-disable-line no-unused-vars
-import TextBox from '../TextBox';
 
 @withStyles(styles)
 class ContentPage {
@@ -25,7 +24,6 @@ class ContentPage {
           {
             this.props.path === '/' ? null : <h1>{this.props.title}</h1>
           }
-          <TextBox />
           <div dangerouslySetInnerHTML={{__html: this.props.content || ''}} />
         </div>
       </div>
