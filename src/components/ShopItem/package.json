@@ -1,0 +1,6 @@
+{
+  "name": "ShopItem",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ShopItem.js"
+}
