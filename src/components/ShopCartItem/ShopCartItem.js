@@ -12,6 +12,15 @@ class ShopCartItem {
   };
 
   render() {
+    var getPrice = function (unitPrice, unitPricePerVolume) {
+      return (
+        <div>
+          <span>price: </span>
+          <span>{unitPrice}</span>
+        </div>
+      );
+    };
+
     return (
       <div className="ShopCartItem">
         <div className="ShopCartItem-container">
@@ -23,10 +32,7 @@ class ShopCartItem {
             <span>quantity: </span>
             <span>{this.props.quantity}</span>
           </div>
-          <div>
-            <span>price: </span>
-            <span>{this.props.unitPrice}</span>
-          </div>
+          {getPrice(this.props.unitPrice, this.props.unitPricePerVolume)}
         </div>
       </div>
     );

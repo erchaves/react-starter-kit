@@ -9,9 +9,6 @@ const ShopCatalogItemsBySku = {
   B: {
     name: 'Shop Item B',
     unitPrice: 5,
-    unitPricePerVolume: {
-      4: 8
-    }
   }
 };
 
