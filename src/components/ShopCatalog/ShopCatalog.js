@@ -12,10 +12,32 @@ class ShopCatalog {
   };
 
   render() {
+    var rows = [];
+    var key;
+    var item;
+    for (key in this.props.items) {
+      item = this.props.items[key];
+      rows.push(
+        <li>
+          <div>
+            <span>name: </span>
+            <span>{item.name}</span>
+          </div>
+          <div>
+            <span>price: </span>
+            <span>{item.unitPrice}</span>
+          </div>
+        </li>
+      );
+    }
+
     return (
       <div className="ShopCatalog">
         <div className="ShopCatalog-container">
-          test ShopCatalog
+          <h4>Shop Catalog Items</h4>
+          <ul>
+            {rows}
+          </ul>
         </div>
       </div>
     );

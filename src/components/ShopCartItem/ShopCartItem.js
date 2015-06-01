@@ -1,0 +1,37 @@
+import React, { PropTypes } from 'react'; // eslint-disable-line no-unused-vars
+import withStyles from '../../decorators/withStyles'; // eslint-disable-line no-unused-vars
+import styles from './ShopCartItem.less'; // eslint-disable-line no-unused-vars
+
+@withStyles(styles)
+class ShopCartItem {
+
+  static contextTypes = {
+  };
+
+  static propTypes = {
+  };
+
+  render() {
+    return (
+      <div className="ShopCartItem">
+        <div className="ShopCartItem-container">
+          <div>
+            <span>name: </span>
+            <span>{this.props.name}</span>
+          </div>
+          <div>
+            <span>quantity: </span>
+            <span>{this.props.quantity}</span>
+          </div>
+          <div>
+            <span>price: </span>
+            <span>{this.props.unitPrice}</span>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+}
+
+export default ShopCartItem;

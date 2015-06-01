@@ -1,0 +1,6 @@
+{
+  "name": "ShopCartItem",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ShopCartItem.js"
+}
